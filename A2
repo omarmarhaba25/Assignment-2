@@ -1,0 +1,18 @@
+#include <iostream>
+#include "Date.h"
+#include "Passenger.h"
+#include "ReservationRequest.h"
+#include "ReservationManager.h"
+using namespace std;
+
+int main()
+{
+	Date* a = new Date();
+	a->setDate(1,1,1);
+	a->printDate();  //Void function does not use cout
+	Passenger* oy("") = new Passenger();
+	oy->setName("");
+	oy->printName(); //Void function does not use cout
+	//system("pause");
+	return 0;
+}
